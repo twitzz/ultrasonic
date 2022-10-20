@@ -54,14 +54,14 @@ basic.forever(function () {
         basic.pause(500)
         if (distance_right > distance_left) {
             car_right()
-            LED_R()
             mecanumRobot.setServo(80)
             basic.pause(500)
+            LED_R()
         } else {
             car_left()
-            LED_L()
             mecanumRobot.setServo(80)
             basic.pause(500)
+            LED_L()
         }
     } else {
         car_forward()
